@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- ctrl+/가 주석 추가 -->
+        <!-- 모든 태그는 시작<?>으로 </?>으로 마무리 -->
+        <!-- title은 인터넷 탭 네임, hi~h6까지 본문 제목 1>6 숫자가 클수록 텍스트사이즈 작아짐 -->
+        <!-- meta charest="utf-8"은 한글이 잘 안보일경우,<link rel="stylesheet" href="./css/exam01.css"는 css파일과 연결  -->
+        <!-- meta charset, char은 문자 set은 규칙 -->
+        <!-- <li>는 list 약자, li태그는 ul혹은 ol태그를 부모로 갖고 있다. ul,ol태그는 그룹핑 시켜줌 ol(ordered list)태그는
+        리스트의 넘버링 시켜줌 -->
+          <title>HTML study</title>
+          <meta charset="utf-8"/>
+          <link rel="stylesheet" href="./css/exam01.css">
+          <style>
+          a {color:black;
+          text-decoration: none;}
+          h1 {
+              font-size: 45px;
+              text-align: center;
+          }
+          </style>
+          <!-- 스타일 태그에 text-decoration:none은 링크된 텍스트에 밑줄을 삭제 할때, 밑줄을 치고 싶을땐 데코레이션에 underline걸어줌 -->
+        </head>
+    <body>
+        <style>
+            h2{ font-size: 20px; color: orange;}
+            p{ color: grey;}
+                </style>
+           
+        <h1>This is heading</h1>
+        <h2><a href="exam.html">HTML</a></h2>
+        <ol>
+            <a href="exam copy.html"> <li>HTML</li></a>
+            <a href="exam copy 2.html"><li>CSS</li></a>
+            <a href="exam copy 3.html"><li>Javascript</li></a>
+           </ol>
+          <!-- a태그 정박하다라는 의미 link의 기능을 갖고 있음  --> 
+          <!-- h는 link ref는 레퍼런스 웹브라이저를 이 브라우저를 참조해 라는 의미 뒤에 링크될 사이트 주소 붙임 -->
+          <!-- 새탭이 열리게 하고 싶을경우 target="blank"   마우스 팁 뜨게 할 경우 뒤에 title="????" -->
+        <p><a href="http://parmsol2.webmaker21.kr/" target="_blank" title="html5 speicification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong><u>creating web pages and web applications</u></p></strong>
+         <p style="margin-top:45px;">Web browsers receive HTML documents from a web </p>
+         <p style="margin-top:5px;">server or from local storage and render them into multimedia web pages.</p>
+        <!-- class 의미는 css, css 페이지에서 설정한 컬러를 가져올수 있으며 두가지 속성 가져올경우<p class="color-primary font 50" -->
+         <p class="color-primary">HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+         <p>HTML elements are the building blocks of HTML pages.</p>
+         <img src="thomas.jpg" width="450px">
+         <p>With HTML constructs, images and other objects, such as interactive forms,</p>
+         <p>may be embedded into the rendered page. It provides a means to</p>
+         <p>create structured documents by denoting structural semantics for text such as headings,</p>
+         <p>paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+         <!-- <strong></strong>은 글자 굵게, <u>는 underline 약자 -->
+             <!-- <br>은 줄바꾸기 태그 (p)는 하나의 단락을 그룹핑 할수 있음, 하지만 단락과 단락의 간격이 고정되어 있어, css를 활용하여 간격 조절을 해줄수 있다  -->
+             <!-- <p style="margin-top:45px;"> -->
+             <!-- 이미지는 프로젝트 폴더에 넣어 불러올수 있음 <img src="thomas.jpg" width="100%"> src는 source 줄임말, width에 고정값 px을 넣을수 있고, %로 하면 화면에 맞게 조정됨 -->
+        
+        
+         <button type="button"onclick="Javascript:alert('click button!!')">click</button>
+         <br><input type="text" />
+         <br><input type="number" style="height:40px"/>
+         <select class="select-style1 select-height">
+             <option>seoul</option>
+             <option>jeju</option>
+         </select>
+         <table>
+             <thead class="thead">
+                 <tr>
+                  <td>이름</td>
+                  <td>지역</td>
+                  <td>전화번호</td>
+                </tr>
+             </thead>
+             <!-- tr은 하나의 행 td는 셀 -->
+
+             <tbody class="tbody">
+                <tr>
+                    <td>홍길동</td>
+                    <td>서울</td>
+                    <td>111-111-11</td>
+                  </tr>
+             </tbody>
+         </table>
+         <!-- 표 제목이 티바디, 티바디는 헤드 밑에 들어가는 목록 -->
+         <!-- 독립적인 엘레먼트 태그는 마지막에 슬래시로 끝남 -->
+          <!-- onclick은 버튼을 클릭했을때 기능을 넣고 싶을때 소재를 설정 할수 있음 뒤에 자바스크립트는 클릭!! 이라는 착을 띄우기 위한 코드 -->
+
+    </body>
+</html>
