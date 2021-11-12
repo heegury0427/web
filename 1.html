@@ -12,33 +12,53 @@
           <meta charset="utf-8"/>
           <link rel="stylesheet" href="./css/exam01.css">
           <style>
+              body{margin:0px}
           a {color:black;
           text-decoration: none;}
           h1 {
               font-size: 45px;
+              display:block;
               text-align: center;
+              border-bottom:1px solid gray; padding: 50px; margin:0px;
           }
-          </style>
+          /* h2{border-right: 1px solid rgb(117, 117, 117); 
+              width:100px;
+              margin:0px;
+              padding-top:0px;              
+            } */
+            ol {padding-left: 33px;}
+            #grid{display: grid;
+                 grid-template-columns: 150px 1fr;} 
+            #grid #menu{border-right: 1px solid rgb(117, 117, 117); 
+              margin:0px;
+              padding:0px;
+              }
+              #article{padding-left: 33px;}
+              </style>
           <!-- 스타일 태그에 text-decoration:none은 링크된 텍스트에 밑줄을 삭제 할때, 밑줄을 치고 싶을땐 데코레이션에 underline걸어줌 -->
         </head>
     <body>
         <style>
-            h2{ font-size: 20px; color: orange;}
+            h2{ font-size: 20px; color: orange; margin-top: 0px;}
             p{ color: grey;}
                 </style>
            
         <h1>This is heading</h1>
-        <h2><a href="exam.html">HTML</a></h2>
+        <div id="grid">
+        <div id="menu">
+        <h2><a href="1.html">HTML</a></h2>
         <ol>
             <a href="box.html" class="saw"> <li>box</li></a>
             <a href="exam copy.html"> <li>HTML</li></a>
             <a href="exam copy 2.html"><li>CSS</li></a>
             <a href="exam copy 3.html"><li>Javascript</li></a>
            </ol>
+           </div>
           <!-- a태그 정박하다라는 의미 link의 기능을 갖고 있음  --> 
           <!-- h는 link ref는 레퍼런스 웹브라이저를 이 브라우저를 참조해 라는 의미 뒤에 링크될 사이트 주소 붙임 -->
           <!-- 새탭이 열리게 하고 싶을경우 target="blank"   마우스 팁 뜨게 할 경우 뒤에 title="????" -->
-        <p><a href="http://parmsol2.webmaker21.kr/" target="_blank" title="html5 speicification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong><u>creating web pages and web applications</u></p></strong>
+        <div id="article">
+         <p><a href="http://parmsol2.webmaker21.kr/" target="_blank" title="html5 speicification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong><u>creating web pages and web applications</u></p></strong>
          <p style="margin-top:45px;">Web browsers receive HTML documents from a web </p>
          <p style="margin-top:5px;">server or from local storage and render them into multimedia web pages.</p>
         <!-- class 의미는 css, css 페이지에서 설정한 컬러를 가져올수 있으며 두가지 속성 가져올경우<p class="color-primary font 50" -->
@@ -83,6 +103,7 @@
          <!-- 표 제목이 티바디, 티바디는 헤드 밑에 들어가는 목록 -->
          <!-- 독립적인 엘레먼트 태그는 마지막에 슬래시로 끝남 -->
           <!-- onclick은 버튼을 클릭했을때 기능을 넣고 싶을때 소재를 설정 할수 있음 뒤에 자바스크립트는 클릭!! 이라는 착을 띄우기 위한 코드 -->
-
+         </div>
+        </div>
     </body>
 </html>
