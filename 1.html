@@ -34,19 +34,32 @@
               padding:0px;
               }
               #article{padding-left: 33px;}
+
+              @media(max-width:800px){
+                 #grid{
+                  display: block;
+                                 }
+               #menu{
+                   border-right:none;
+                    }
+                h1 {
+                   border-bottom:none;
+                      }
+                      }
+                  
               </style>
           <!-- 스타일 태그에 text-decoration:none은 링크된 텍스트에 밑줄을 삭제 할때, 밑줄을 치고 싶을땐 데코레이션에 underline걸어줌 -->
         </head>
     <body>
         <style>
             h2{ font-size: 20px; color: orange; margin-top: 0px;}
-            p{ color: grey;}
+            p{ color: grey; }
                 </style>
            
         <h1>This is heading</h1>
         <div id="grid">
         <div id="menu">
-        <h2><a href="1.html">HTML</a></h2>
+        <h2 style="padding-left:20px; padding-top:20px;"><a href="1.html">HTML</a></h2>
         <ol>
             <a href="box.html" class="saw"> <li>box</li></a>
             <a href="exam copy.html"> <li>HTML</li></a>
